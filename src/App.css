@@ -1,0 +1,130 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+body{
+  background-color:bisque
+}
+.container {
+  font-family: "Comic Sans MS", san-serif;
+  margin: 4rem auto;
+  border: 1px solid black;
+  padding: 2rem 3rem 3rem;
+  background-color: #1fa2cadd;
+  max-width: 500px;
+  box-shadow: 3px 3px 15px 5px rgba(0, 0, 0, 0.16);
+}
+
+.title {
+  font-size: 3rem;
+  border-bottom: 1px solid rgba(255, 85, 51, 0.5);
+}
+
+.title span {
+  display: block;
+  font-size: 0.3em;
+  margin-bottom: 0.7rem;
+  margin-top: 0.2rem;
+}
+
+.task-list {
+  list-style: none;
+  margin-top: 2rem;
+}
+
+.task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 -2.5rem 4px;
+  padding: 1.1rem 3rem;
+  background: rgba(244, 99, 32, 0.847);
+  transition: all 0.5s ease;
+  transform-origin: top left;
+}
+
+.fall {
+  transform: rotate(10deg);
+  opacity: 0;
+}
+
+.action {
+  flex-shrink: 0;
+}
+
+.task-list .btn-action {
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.task-list input[type="checkbox"] {
+  position: relative;
+  top: 0.3rem;
+}
+
+.task-list .label {
+  transition: opacity 0.2s linear;
+}
+.task-list .done .label {
+  opacity: 0.4;
+  text-decoration: line-through;
+}
+
+.filter-wraper {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1rem;
+}
+
+.filter-wraper input[type="checkbox"] {
+  margin-left: 0.5rem;
+}
+
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+}
+.form label {
+  min-width: 100%;
+  font-size: 20px;
+  margin-bottom: 0.5rem;
+}
+
+.form input {
+  flex-grow: 1;
+  border: none;
+  margin-right: 1rem;
+  padding: 0 0.5rem;
+  background: #ffffff;
+}
+.form button {
+  padding: 0.2rem 1rem;
+  text-transform: uppercase;
+  border: none;
+  color: #2b2626;
+  cursor: pointer;
+  font-weight: bold;
+  border: 1px solid rgb(10, 25, 25);
+  background: #2de511;
+  transition: background 0.2s ease-out;
+}
+
+.form button:hover {
+  filter: brightness(130%);
+}
+
+.form input,
+.form button {
+  font-family: "Quicksan", san-serif;
+  height: 3rem;
+}
